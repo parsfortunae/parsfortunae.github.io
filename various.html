@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI etc - PARS FORTUNAE</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- Header -->
+  <div id="header-placeholder"></div>
+  <script>
+    // Подключение header.html
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      });
+  </script>
+
+  <!-- Меню -->
+  <div id="menu-placeholder"></div>
+  <script>
+    // Подключение menu.html
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('menu-placeholder').innerHTML = data;
+      });
+  </script>
+
+  <main class="container">
+    <section>
+      <h2>AI etc</h2>
+      <p>В этом разделе представлены ссылки на полезные ресурсы, связанные с искусственным интеллектом и другими технологиями.</p>
+
+      <!-- Блок с кнопками контактов -->
+      <div class="contact-buttons">
+        <a href="https://award-vpn.com/your-pin" target="_blank" style="text-decoration: none;">
+          <button><i class="fa fa-whatsapp"></i> Award-VPN</button>
+        </a>
+        <a href="https://github.com/login" target="_blank" style="text-decoration: none;">
+          <button><i class="fa fa-envelope"></i> GitHub</button>
+        </a>
+        <a href="https://chat.qwen.ai/auth?action=signin" target="_blank" style="text-decoration: none;">
+          <button><i class="fa fa-paper-plane"></i> Qwen Chat</button>
+        </a>
+        <a href="https://chat.deepseek.com/sign_in" target="_blank" style="text-decoration: none;">
+          <button><i class="fa fa-whatsapp"></i> DeepSeek</button>
+        </a>
+        <a href="https://auth.mistral.ai/ui/login" target="_blank" style="text-decoration: none;">
+          <button><i class="fa fa-user"></i> Mistral AI</button>
+        </a>
+        <a href="https://www.perplexity.ai/?login-source=oneTapHome" target="_blank" style="text-decoration: none;">
+          <button><i class="fa fa-user"></i> Perplexity AI</button>
+        </a>
+        <a href="https://kompas.ai/dashboard/landing" target="_blank" style="text-decoration: none;">
+          <button><i class="fa fa-user"></i> Kompas AI</button>
+        </a>
+        <a href="https://app.simplelogin.io/auth/login" target="_blank" style="text-decoration: none;">
+          <button><i class="fa fa-user"></i> SimpleLogin</button>
+        </a>
+        <a href="https://account.proton.me/ru/mail" target="_blank" style="text-decoration: none;">
+          <button><i class="fa fa-user"></i> Proton Mail</button>
+        </a>
+        <a href="https://login.microsoftonline.com" target="_blank" style="text-decoration: none;">
+          <button><i class="fa fa-user"></i> Outlook Login</button>
+        </a>
+        <a href="https://signup.live.com/signup" target="_blank" style="text-decoration: none;">
+          <button><i class="fa fa-user"></i> Outlook Signup</button>
+        </a>
+        <a href="https://cryptpad.disroot.org/login/" target="_blank" style="text-decoration: none;">
+          <button><i class="fa fa-user"></i> CryptPad (Disroot)</button>
+        </a>
+        <a href="https://pad.envs.net/login/" target="_blank" style="text-decoration: none;">
+          <button><i class="fa fa-user"></i> Pad (Envs)</button>
+        </a>
+        <a href="https://cryptpad.private.coffee/login/" target="_blank" style="text-decoration: none;">
+          <button><i class="fa fa-user"></i> CryptPad (Private Coffee)</button>
+        </a>
+        <a href="https://www.jottacloud.com/login" target="_blank" style="text-decoration: none;">
+          <button><i class="fa fa-user"></i> JottaCloud</button>
+        </a>
+        <a href="https://koofr.eu/login" target="_blank" style="text-decoration: none;">
+          <button><i class="fa fa-user"></i> Koofr</button>
+        </a>
+        <a href="https://icedrive.net/login" target="_blank" style="text-decoration: none;">
+          <button><i class="fa fa-user"></i> IceDrive</button>
+        </a>
+        <a href="https://account.box.com/login" target="_blank" style="text-decoration: none;">
+          <button><i class="fa fa-user"></i> Box</button>
+        </a>
+        <a href="https://www.dropbox.com/login" target="_blank" style="text-decoration: none;">
+          <button><i class="fa fa-user"></i> Dropbox</button>
+        </a>
+        <a href="https://mega.nz/login" target="_blank" style="text-decoration: none;">
+          <button><i class="fa fa-user"></i> Mega.nz</button>
+        </a>
+      </div>
+
+      <!-- Встраиваемые пады CryptPad -->
+      <h3>Встраиваемые пады CryptPad</h3>
+      <div class="iframe-container">
+        <iframe 
+          src="https://cryptpad.disroot.org/pad/#/2/pad/view/EvWolYBHIglsM87zoUEpDqPmj5B0RIJEgw3rsItg7Dc/p/" 
+          frameborder="0"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <div class="iframe-container">
+        <iframe 
+          src="https://cryptpad.disroot.org/pad/#/2/pad/view/Xijp5mChEGWEc+iILPjn-uSDkxMG2mfzZIY3HhrcEzs/p/" 
+          frameborder="0"
+          allowfullscreen>
+        </iframe>
+      </div>
+
+      <div class="iframe-container">
+        <iframe 
+          src="https://cryptpad.disroot.org/pad/#/2/pad/edit/zvkAKpulCdNICwfd0YptNjlD/p/" 
+          frameborder="0"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+  <script>
+    // Подключение footer.html
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>

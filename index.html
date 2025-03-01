@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PARS FORTUNAE</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- Header -->
+  <div id="header-placeholder"></div>
+  <script>
+    // Подключение header.html
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+      });
+  </script>
+
+  <!-- Меню -->
+  <div id="menu-placeholder"></div>
+  <script>
+    // Подключение menu.html
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('menu-placeholder').innerHTML = data;
+      });
+  </script>
+
+  <main class="container"> <!-- Добавляем класс container -->
+    <section>
+      <h2>Добро пожаловать на PARS FORTUNAE</h2>
+      <p>Это главная страница сайта.</p>
+
+      <!-- Время в Лондоне -->
+      <p><a href="https://time.is/London" id="time_is_link" rel="nofollow" style="font-size:36px">Лондон:</a>
+      <span id="London_z716" style="font-size:36px"></span>
+      <script src="//widget.time.is/t.js"></script>
+      <script>
+        time_is_widget.init({London_z716:{}});
+      </script>
+
+      <!-- iframe с астрологией -->
+      <div class="iframe-container">
+        <iframe 
+          src="https://horoscopes.astro-seek.com/current-planets-new-window?c_city=500&house_system=koch&styl_graf=&typ=ph1"
+          frameborder="0"
+          allowfullscreen
+          allow="geolocation"
+          scrolling="yes"
+          class="astro-iframe"
+        >
+          Ваш браузер не поддерживает iframes. 
+          <a href="https://horoscopes.astro-seek.com/current-planets-new-window?c_city=500&house_system=koch&styl_graf=&typ=ph1" target="_blank">
+            Открыть в новом окне
+          </a>
+        </iframe>
+      </div>
+
+      <!-- Блок с кнопками контактов -->
+      <div class="contact-buttons">
+        <a href="https://stellarium-web.org/" style="text-decoration: none;">
+          <button><i class="fa fa-user"></i> Stellarium-web</button>
+        </a>
+        <a href="https://theskylive.com/planetarium" style="text-decoration: none;">
+          <button><i class="fa fa-user"></i> Theskylive.com</button>
+        </a>
+        <a href="https://www.foreca.ru/Russia/Yekaterinburg" target="_blank" style="text-decoration: none;">
+          <button><i class="fa fa-user"></i> Foreca.ru</button>
+        </a>
+        <a href="https://www.google.ru/maps/@56.8415545,60.6265811,10z/data=!3m1!1e3" target="_blank" style="text-decoration: none;">
+          <button><i class="fa fa-user"></i> Google Maps</button>
+        </a>
+        <a href="https://www.deepl.com/ru/translator" target="_blank" style="text-decoration: none;">
+          <button><i class="fa fa-user"></i> Deepl.com</button>
+        </a>
+        <a href="https://award-vpn.com/your-pin" target="_blank" style="text-decoration: none;">
+          <button><i class="fa fa-user"></i> Award-vpn.com</button>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <div id="footer-placeholder"></div>
+  <script>
+    // Подключение footer.html
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+      });
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
